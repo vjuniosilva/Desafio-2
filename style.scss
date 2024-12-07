@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    font-family: "oswald";
+    font-size: 1.7rem;
+
+    nav {
+        width: 40%;
+
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+
+    }
+
+
+    a {
+        text-decoration: none;
+        color: #5B5B5B;
+        font-size: 1.25rem;
+        font-weight: 500;
+
+    }
+
+    a:hover {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:201px) and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+
+        nav {
+            height: 8vh;
+            width: 100%;
+        }
+
+    }
+
+
+
+
+}
+
+main {
+
+    .containerBackgroundImage {
+        font-family: "Oswald";
+        color: #FFFFFF;
+        height: 90vh;
+        background-image: url(./Imagens/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-weight: 700;
+
+
+
+        h1 {
+            font-size: 6rem;
+            width: 60%;
+            padding-left: 12rem;
+            padding-top: 12rem;
+
+        }
+
+        h2 {
+            padding-left: 12rem;
+            width: 50%;
+            display: flex;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        button {
+
+            margin-left: 16rem;
+            background-color: #0016DF;
+            color: #FFFFFF;
+            font-size: 1.5rem;
+            width: 15rem;
+            height: 4rem;
+            font-weight: 700;
+
+        }
+
+
+    }
+
+    @media (min-width:201px) and (max-width: 500px) {
+
+        .containerBackgroundImage {
+            height: 35vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                height: 8vh;
+                margin-bottom: 0;
+                font-size: 2rem;
+                padding-top: 0;
+                padding-left: 0;
+            }
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                font-size: 1rem;
+                padding-left: 0;
+                width: 80%;
+
+            }
+
+            button {
+                margin-left: 0;
+                font-size: 1rem;
+                height: 3rem;
+                width: 10rem;
+            }
+        }
+
+    }
+
+    .containerGestãoPortuária {
+        display: flex;
+        height: 130vh;
+        align-items: center;
+        justify-content: space-evenly;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            display: flex;
+            width: 40%;
+            height: 80vh;
+            justify-content: space-evenly;
+
+
+            h3 {
+                color: #0017E9;
+                font-family: "oswald";
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+
+            h2 {
+                font-family: "roboto";
+                font-size: 2.25rem;
+                width: 70%;
+
+            }
+
+            p {
+                width: 80%;
+                font-family: "roboto";
+                font-size: 1.5rem;
+            }
+
+            a {
+                color: #0017E9;
+                text-decoration: none;
+                font-family: "roboto";
+                font-size: 1.5rem;
+            }
+        }
+
+        img {
+            width: 37%;
+        }
+    }
+
+    @media (min-width:201px) and (max-width: 500px) {
+        .containerGestãoPortuária {
+            display: flex;
+            flex-direction: column;
+
+            article {
+                width: 90%;
+
+                h3 {
+                    font-size: 1.3rem;
+                }
+
+                h2 {
+                    width: 100%;
+                    font-size: 1.7rem;
+                }
+
+                p {
+                    width: 100%;
+                    font-size: 1.2rem;
+                }
+            }
+
+            img {
+                width: 70%;
+            }
+
+
+        }
+    }
+
+    .containerSoluções {
+        display: flex;
+        background-color: #D8D8D8;
+        height: 130vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: "oswald";
+
+
+        h2 {
+            text-transform: uppercase;
+            color: #0017E9;
+            font-size: 1.5rem;
+            margin-bottom: -6rem;
+
+
+        }
+
+        h3 {
+            text-transform: uppercase;
+            color: #000000;
+            font-size: 1.5rem;
+
+        }
+    }
+
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+
+        .box {
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            height: 72vh;
+            width: 25vw;
+
+
+
+            h4 {
+                padding-left: 3rem;
+                padding-top: 2rem;
+                width: 80%;
+                font-weight: 500;
+                font-size: 1.5rem;
+
+            }
+
+            p {
+                padding-left: 3rem;
+                padding-top: 2rem;
+                width: 80%;
+                font-weight: 200;
+                font-size: 1.5rem;
+
+            }
+
+
+        }
+    }
+
+    @media (min-width:201px) and (max-width: 500px) {
+        .containerSoluções {
+            height: 210vh;
+
+            h2 {
+                text-transform: uppercase;
+                color: #0017E9;
+                font-size: 1.2rem;
+                margin-bottom: 0;
+                padding-top: 3rem;
+
+
+            }
+
+            h3 {
+                text-transform: uppercase;
+                color: #000000;
+                font-size: 1.2rem;
+
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                height: 190vh;
+
+                .box {
+                    width: 70%;
+                    height: 50vh;
+
+                    h4 {
+                        width: 100%;
+                        font-size: 1.3rem;
+                        padding-left: 1rem;
+                        padding-top: 1rem;
+                    }
+
+                    p {
+                        width: 90%;
+                        font-size: 1.1rem;
+                        padding-left: 1rem;
+                        padding-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .containerContato {
+        display: flex;
+        justify-content: space-evenly;
+        text-transform: uppercase;
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+            height: 110vh;
+            flex-direction: column;
+            font-family: "oswald";
+            font-weight: 500;
+            width: 45%;
+        }
+
+
+        h2 {
+            color: #0017E9;
+            font-size: 2rem;
+            margin-bottom: -3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+
+        .Galeria {
+
+            height: 70vh;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .Formulario {
+            display: flex;
+            justify-content: space-evenly;
+            height: 110vh;
+            flex-direction: column;
+            font-family: "oswald";
+            font-weight: 500;
+            width: 35%;
+
+
+
+            div {
+                height: 14vh;
+                width: 75%;
+                font-size: 1.25rem;
+                font-weight: 300;
+                padding-left: 1rem;
+            }
+
+            h2 {
+                margin-bottom: -1rem;
+                padding-top: 1.8rem;
+            }
+
+            .Mensagem {
+                height: 24vh;
+                width: 75%;
+            }
+
+            button {
+                color: #FFFFFF;
+                background-color: #0017E9;
+                height: 3rem;
+                font-size: 1.5rem;
+                font-weight: 500;
+                width: 20rem;
+
+            }
+
+            input#Nome {
+                width: 20rem;
+                height: 6vh;
+            }
+
+            input#email {
+                width: 20rem;
+                height: 6vh;
+            }
+
+            input#telefone {
+                width: 20rem;
+                height: 6vh;
+            }
+
+            input#Mensagem {
+                width: 20rem;
+                height: 7rem;
+            }
+
+
+
+
+        }
+    }
+
+    @media (min-width:201px) and (max-width: 500px) {
+        .containerContato {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 240vh;
+
+            div {
+                height: 130vh;
+                width: 100%;
+                align-items: center;
+
+                .Galeria {
+                    height: 120vh;
+                }
+
+                h2 {
+                    color: #0017E9;
+                    font-size: 1rem;
+                    margin-bottom: 0;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .Formulario {
+                width: 100%;
+                height: 100vh;
+                align-items: center;
+
+
+                h2 {
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                form {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 95%;
+
+                    input#Nome {
+                        width: 20rem;
+                        height: 6vh;
+
+                    }
+
+                    div {
+                        align-items: flex-start;
+                        width: 100%;
+                    }
+
+                    .Mensagem {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D8D8D8;
+    color: #001C43;
+    font-weight: 700;
+}
+
+@media (min-width:201px) and (max-width: 500px) {
+    footer {
+        font-size: 0.75rem;
+    }
+}
